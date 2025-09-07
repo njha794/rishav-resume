@@ -7,28 +7,39 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #f8f9fa;
+      background-color: #f4f6f9;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    .resume-header {
+    .navbar {
       background: #0d6efd;
-      color: #fff;
-      padding: 30px;
-      text-align: center;
-      border-radius: 8px;
     }
-    .resume-section {
-      margin-top: 30px;
+    .navbar a {
+      color: white !important;
+    }
+    .header {
+      background: linear-gradient(135deg, #0d6efd, #0a58ca);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
     }
     .section-title {
-      border-bottom: 2px solid #0d6efd;
-      margin-bottom: 15px;
-      padding-bottom: 5px;
+      border-left: 5px solid #0d6efd;
+      padding-left: 10px;
+      margin-bottom: 20px;
       font-weight: 600;
       color: #0d6efd;
     }
-    .download-btn {
-      margin-top: 20px;
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
     }
     footer {
       margin-top: 40px;
@@ -36,109 +47,133 @@
       font-size: 14px;
       color: #6c757d;
     }
+    .download-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <!-- Header -->
-  <div class="resume-header">
-    <h1>Rishav Kumar</h1>
-    <p>B.Tech in Computer Science & Engineering</p>
-    <p>📞 +91-8405889342 | 📧 <a href="mailto:risu794@gmail.com" class="text-white">risu794@gmail.com</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/rishav-kumar-488564b2/" target="_blank" class="text-white">LinkedIn</a></p>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold" href="#">Rishav Kumar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+      </ul>
+    </div>
   </div>
+</nav>
 
-  <!-- Download Button -->
-  <div class="text-center download-btn">
-    <a href="RISHAV_KUMAR_RESUME.pdf" class="btn btn-primary" download>📥 Download Resume (PDF)</a>
-  </div>
-
-  <!-- Professional Summary -->
-  <div class="resume-section">
-    <h3 class="section-title">Professional Summary</h3>
-    <ul>
-      <li>Software Developer with 3 years of experience in ERP Solutions (CRM, Inventory, Purchase) and service-based web development.</li>
-      <li>Proficient in PHP, CodeIgniter, MySQL, SQL, jQuery, HTML5, CSS, and Bootstrap.</li>
-      <li>Hands-on experience in React.js and React Native for modern web and mobile applications.</li>
-      <li>Delivered 5+ ERP implementations and multiple service-based websites for global clients.</li>
-      <li>Strong understanding of OOPS, client handling, and ERP system implementation.</li>
-    </ul>
-  </div>
-
-  <!-- Technical Skills -->
-  <div class="resume-section">
-    <h3 class="section-title">Technical Skills</h3>
-    <ul>
-      <li>Programming: PHP, Java (Beginner)</li>
-      <li>Frameworks: CodeIgniter 3, React.js, React Native</li>
-      <li>Databases: MySQL</li>
-      <li>Web: HTML, CSS, JavaScript, Bootstrap</li>
-      <li>CMS: WordPress (Intermediate)</li>
-      <li>Tools: Git, MS Office</li>
-    </ul>
-  </div>
-
-  <!-- Experience -->
-  <div class="resume-section">
-    <h3 class="section-title">Professional Experience</h3>
-    <h5>Lasting Software Pvt. Ltd. | Panchkula, Haryana | June 2022 – Present</h5>
-    <ul>
-      <li>Worked as ERP Developer, WordPress Developer, and Frontend Developer.</li>
-      <li>Developed and maintained ERP Modules (CRM, Inventory, Purchase).</li>
-      <li>Delivered ERP projects: cement.lastingcrm.com, alea.lastingcrm.com, namohtoolings.org.</li>
-      <li>Created WordPress websites: ethnichealth.org.nz.</li>
-      <li>Built responsive websites with HTML, CSS, jQuery, Bootstrap (asueducation.host).</li>
-    </ul>
-  </div>
-
-  <!-- Key Achievements -->
-  <div class="resume-section">
-    <h3 class="section-title">Key Achievements</h3>
-    <ul>
-      <li>Improved CRM workflow, boosting lead conversion by 25% and reducing manual work by 40%.</li>
-      <li>Optimized inventory management with barcode integration, reducing errors by 30%.</li>
-      <li>Automated purchase order generation, improving procurement efficiency by 20%.</li>
-      <li>Delivered 5+ ERP implementations across industries.</li>
-      <li>Improved ERP query performance by 20%.</li>
-    </ul>
-  </div>
-
-  <!-- Projects -->
-  <div class="resume-section">
-    <h3 class="section-title">Projects</h3>
-    <ul>
-      <li><a href="https://asktechwebsolution.com/" target="_blank">asktechwebsolution.com</a> – Service-based IT website</li>
-      <li><a href="http://clikopro.fr/" target="_blank">clikopro.fr</a> – French business platform</li>
-      <li><a href="https://aksconstructions.co.nz/" target="_blank">aksconstructions.co.nz</a> – WordPress construction site</li>
-      <li><a href="https://ethnichealth.org.nz/" target="_blank">ethnichealth.org.nz</a> – WordPress health services site</li>
-      <li><a href="http://asueducation.host" target="_blank">asueducation.host</a> – Responsive education website</li>
-    </ul>
-  </div>
-
-  <!-- Certifications -->
-  <div class="resume-section">
-    <h3 class="section-title">Certifications</h3>
-    <ul>
-      <li>Oracle SQL Concepts and Commands – EDUCBA (<a href="https://www.educba.com/certificate/?c=C9B32K5BM" target="_blank">View Certificate</a>)</li>
-    </ul>
-  </div>
-
-  <!-- Education -->
-  <div class="resume-section">
-    <h3 class="section-title">Education</h3>
-    <ul>
-      <li>B.Tech in Computer Science & Engineering | RP Sharma Institute of Technology (2016-2020)</li>
-      <li>HSC | L.C. College (2015) – 68.40%</li>
-      <li>SSLC | Shanti Mission Academy (2012) – 64.7%</li>
-    </ul>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>📅 Last Updated: September 2025</p>
-  </footer>
+<!-- Header -->
+<div class="header">
+  <h1>Rishav Kumar</h1>
+  <p>B.Tech in Computer Science & Engineering</p>
+  <p>📞 +91-8405889342 | 📧 <a href="mailto:risu794@gmail.com" class="text-white">risu794@gmail.com</a></p>
+  <p>🔗 <a href="https://www.linkedin.com/in/rishav-kumar-488564b2/" target="_blank" class="text-white">LinkedIn</a></p>
 </div>
 
+<div class="container">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-md-4">
+      <div id="skills" class="card p-3">
+        <h4 class="section-title">Technical Skills</h4>
+        <ul>
+          <li>PHP, Java (Beginner)</li>
+          <li>CodeIgniter 3, React.js, React Native</li>
+          <li>MySQL, SQL</li>
+          <li>HTML, CSS, JavaScript, Bootstrap</li>
+          <li>WordPress (Intermediate)</li>
+          <li>Git, MS Office</li>
+        </ul>
+      </div>
+
+      <div id="education" class="card p-3">
+        <h4 class="section-title">Education</h4>
+        <ul>
+          <li>B.Tech CSE | RP Sharma Institute (2016-2020)</li>
+          <li>HSC | L.C. College (2015) – 68.40%</li>
+          <li>SSLC | Shanti Mission Academy (2012) – 64.7%</li>
+        </ul>
+      </div>
+
+      <div class="card p-3">
+        <h4 class="section-title">Certifications</h4>
+        <ul>
+          <li>Oracle SQL Concepts and Commands – EDUCBA (<a href="https://www.educba.com/certificate/?c=C9B32K5BM" target="_blank">View</a>)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-md-8">
+      <div id="summary" class="card p-3">
+        <h4 class="section-title">Professional Summary</h4>
+        <ul>
+          <li>3 years of experience in ERP Solutions (CRM, Inventory, Purchase) & web development.</li>
+          <li>Proficient in PHP, CodeIgniter, MySQL, HTML5, CSS, Bootstrap, React.js, React Native.</li>
+          <li>Delivered 5+ ERP implementations & multiple service-based websites for global clients.</li>
+          <li>Strong in OOPS, client handling, and ERP system implementation.</li>
+        </ul>
+      </div>
+
+      <div id="experience" class="card p-3">
+        <h4 class="section-title">Professional Experience</h4>
+        <h5>Lasting Software Pvt. Ltd. | Panchkula | Jun 2022 – Present</h5>
+        <ul>
+          <li>ERP Developer, WordPress Developer, Frontend Developer.</li>
+          <li>Developed ERP Modules (CRM, Inventory, Purchase).</li>
+          <li>ERP projects: cement.lastingcrm.com, alea.lastingcrm.com, namohtoolings.org.</li>
+          <li>WordPress sites: ethnichealth.org.nz.</li>
+          <li>Responsive sites using HTML, CSS, Bootstrap (asueducation.host).</li>
+        </ul>
+      </div>
+
+      <div class="card p-3">
+        <h4 class="section-title">Key Achievements</h4>
+        <ul>
+          <li>Improved CRM workflow, boosting conversions by 25%.</li>
+          <li>Reduced manual work by 40% via automation.</li>
+          <li>Optimized inventory with barcode scanning (error reduction 30%).</li>
+          <li>Delivered 5+ ERP implementations across industries.</li>
+        </ul>
+      </div>
+
+      <div id="projects" class="card p-3">
+        <h4 class="section-title">Projects</h4>
+        <ul>
+          <li><a href="https://asktechwebsolution.com/" target="_blank">asktechwebsolution.com</a></li>
+          <li><a href="http://clikopro.fr/" target="_blank">clikopro.fr</a></li>
+          <li><a href="https://aksconstructions.co.nz/" target="_blank">aksconstructions.co.nz</a></li>
+          <li><a href="https://ethnichealth.org.nz/" target="_blank">ethnichealth.org.nz</a></li>
+          <li><a href="http://asueducation.host" target="_blank">asueducation.host</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Floating Download Button -->
+<div class="download-btn">
+  <a href="RISHAV_KUMAR_RESUME.pdf" class="btn btn-lg btn-primary shadow" download>📥 Download Resume</a>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>📅 Last Updated: September 2025</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
